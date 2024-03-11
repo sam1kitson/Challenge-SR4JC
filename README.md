@@ -9,16 +9,16 @@ To build and run the solution solution follow the following steps:
 3. Running the project: [Chapter - Running The Project](#running-the-project)
 
 Alternatively, to use a pre-compiled version follow the following steps:
-1. Install the OpenJDK 21
-2. Download the SR4JC-1.0-SNAPSHOT.jar from https://github.com/sam1kitson/Challenge-SR4JC/releases/tag/1.0
+1. Install the <a href="https://jdk.java.net/21/">OpenJDK 21</a>
+2. Download the <a href="https://github.com/sam1kitson/Challenge-SR4JC/releases/tag/1.0">SR4JC-1.0-SNAPSHOT.jar</a>
 3. Run the jar using the following command: `java -jar [INSERT_PATH_TO_DOWNLOADED_JAR] -f "mockdata/textfile.txt"`
 
 ## Prerequisites
 
-- <a href=https://jdk.java.net/21/>Java JDK</a> 
+- <a href="https://jdk.java.net/21/">Java JDK</a> 
   - Requires 21+
   - Certified on OpenJDK 21
-- <a href=https://maven.apache.org/download.cgi>Maven</a>
+- <a href="https://maven.apache.org/download.cgi">Maven</a>
   - Requires 3.9.0+
   - Certified on version 3.9.6
 

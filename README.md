@@ -3,10 +3,15 @@
 A solution to the word count challenge (SR4JC), where an input text file is specified in the parameters, and the solution should read the word contents and produce a word count for each word in a count descending order.
 This solution has been written in Java, using maven to handle libraries and packaging.
 
-To use this solution follow the following steps:
+To build and run the solution solution follow the following steps:
 1. Install the required prerequisites: [Chapter - Prerequisites](#prerequisites)
 2. Run the unit tests, and compile the jar: [Chapter - Building The Project](#building-the-project)
 3. Running the project: [Chapter - Running The Project](#running-the-project)
+
+Alternatively, to use a pre-compiled version follow the following steps:
+1. Install the OpenJDK 21
+2. Download the SR4JC-1.0-SNAPSHOT.jar from https://github.com/sam1kitson/Challenge-SR4JC/releases/tag/1.0
+3. Run the jar using the following command: `java -jar [INSERT_PATH_TO_DOWNLOADED_JAR] -f "mockdata/textfile.txt"`
 
 ## Prerequisites
 

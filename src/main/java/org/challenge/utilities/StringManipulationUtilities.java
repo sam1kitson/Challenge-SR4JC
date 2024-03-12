@@ -25,7 +25,7 @@ public class StringManipulationUtilities {
         String processedInput = DEFAULT_CASE_SENSITIVITY ? inputString : inputString.toLowerCase();
 
         // Standardise the space between words
-        for (Character spaceCharacter : ADDITIONAL_SPACE_CHARACTERS) {
+        for (final Character spaceCharacter : ADDITIONAL_SPACE_CHARACTERS) {
             processedInput = processedInput.replace(spaceCharacter, ' ');
         }
 
@@ -33,10 +33,10 @@ public class StringManipulationUtilities {
         processedInput = processedInput.replaceAll("[^a-zA-Z0-9 ]", "");
 
         // Separate out each word
-        String[] separatedWords = processedInput.split(" ");
-        List<String> validatedWords = new ArrayList<>();
+        final String[] separatedWords = processedInput.split(" ");
+        final List<String> validatedWords = new ArrayList<>();
 
-        for (String word : separatedWords) {
+        for (final String word : separatedWords) {
             if (!word.isEmpty()) {
                 validatedWords.add(word);
             }

@@ -36,6 +36,7 @@ public class InputFileStatistics {
     /**
      * Function to return the word statistics of this input file.
      *
+     * @param comparator The comparator that is used to sort the words
      * @return the word statistics of this input file (order is random)
      */
     public List<WordStatistics> fetchWordStatistics(Comparator<WordStatistics> comparator) {

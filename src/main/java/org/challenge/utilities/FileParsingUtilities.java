@@ -38,7 +38,7 @@ public class FileParsingUtilities {
      */
     public static String readFileToString(final File file) throws FileParsingException {
         try {
-            Path filepathToBeRead = file.toPath();
+            final Path filepathToBeRead = file.toPath();
 
             return Files.readString(filepathToBeRead, DEFAULT_ENCODING);
         } catch (InvalidPathException invalidPathException) {

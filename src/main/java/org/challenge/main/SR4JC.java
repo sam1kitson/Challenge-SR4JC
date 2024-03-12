@@ -40,7 +40,7 @@ public class SR4JC {
      * @param arguments The input parameters to be passed in
      */
     public static void main(String[] arguments) {
-        Logger logger = Logger.getLogger("org.challenge.SR4JC");
+        final Logger logger = Logger.getLogger("org.challenge.SR4JC");
         logger.setLevel(LOGGING_LEVEL);
 
         try {
@@ -59,7 +59,7 @@ public class SR4JC {
      * @param logger The logger to use to report issues
      * @return The status code to be returned
      */
-    public static int runScript(String[] arguments, Logger logger) {
+    public static int runScript(final String[] arguments, final Logger logger) {
         CommandLine commandLine;
         File inputFile;
 
@@ -106,7 +106,7 @@ public class SR4JC {
                 new WordStatisticsCountDescComparator());
 
         // Output the words to the user
-        for (WordStatistics word : outputWords) {
+        for (final WordStatistics word : outputWords) {
             printlnString(word.toString());
         }
 
